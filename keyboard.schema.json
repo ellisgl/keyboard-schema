@@ -1,6 +1,7 @@
 {
     "$schema"    : "http://json-schema.org/draft-07/schema#",
     "$id"        : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/master/keyboard.schema.json",
+    "title"      : "Keyboard master schema",
     "type"       : "object",
     "properties" : {
         "keys" : {

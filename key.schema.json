@@ -1,6 +1,8 @@
 {
     "$schema"     : "http://json-schema.org/draft-07/schema#",
     "$id"         : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/master/key.schema.json",
+    "title": "Key Schema",
+    "description": "Key cap and switch position, rotation and electrical info.",
     "type"        : "object",
     "definitions" : {
         "Key" : {
