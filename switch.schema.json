@@ -14,8 +14,17 @@
                 },
                 "description"  : {
                     "type" : "string"
+                },
+                "hasLed"       : {
+                    "type" : "boolean"
+                },
+                "ledColor"     : {
+                    "type" : [
+                        "string",
+                        "null"
+                    ]
                 }
             }
         }
     }
-},
+}
