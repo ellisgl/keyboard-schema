@@ -3,7 +3,7 @@
     "$id"         : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/master/switch.schema.json",
     "type"        : "object",
     "definitions" : {
-        "switch" : {
+        "Switch" : {
             "type"       : "object",
             "properties" : {
                 "manufacturer" : {

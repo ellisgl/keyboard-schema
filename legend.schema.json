@@ -3,7 +3,7 @@
     "$id"         : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/master/legend.schema.json",
     "type"        : "object",
     "definitions" : {
-        "legend" : {
+        "Legend" : {
             "type"       : "object",
             "properties" : {
                 "string"    : {
