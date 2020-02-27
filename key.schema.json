@@ -1,252 +1,170 @@
 {
     "$schema"     : "http://json-schema.org/draft-07/schema#",
-    "$id": "https://raw.githubusercontent.com/ellisgl/keyboard-schema/master/key.schema.json",
-    "type" : "object",
+    "$id"         : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/master/key.schema.json",
+    "type"        : "object",
     "definitions" : {
         "key" : {
             "type"       : "object",
             "properties" : {
-                "position"   : {
+                "legends"       : {
                     "type"       : "object",
                     "properties" : {
-                        "x"        : {
-                            "type"       : "number",
-                            "multipleOf" : 0.0005
+                        "topLeft"      : {
+                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/master/legend.schema.json"
                         },
-                        "y"        : {
-                            "type"       : "number",
-                            "multipleOf" : 0.0005
+                        "topCenter"    : {
+                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/master/legend.schema.json"
                         },
-                        "rotation" : {
+                        "topRight"     : {
+                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/master/legend.schema.json"
+                        },
+                        "middleLeft"   : {
+                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/master/legend.schema.json"
+                        },
+                        "middleCenter" : {
+                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/master/legend.schema.json"
+                        },
+                        "middleRight"  : {
+                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/master/legend.schema.json"
+                        },
+                        "bottomLeft"   : {
+                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/master/legend.schema.json"
+                        },
+                        "bottomCenter" : {
+                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/master/legend.schema.json"
+                        },
+                        "bottomRight"  : {
+                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/master/legend.schema.json"
+                        },
+                        "frontLeft"    : {
+                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/master/legend.schema.json"
+                        },
+                        "frontCenter"  : {
+                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/master/legend.schema.json"
+                        },
+                        "frontRight"   : {
+                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/master/legend.schema.json"
+                        }
+                    }
+                },
+                "x"             : {
+                    "type"       : "number",
+                    "multipleOf" : 0.0005
+                },
+                "y"             : {
+                    "type"       : "number",
+                    "multipleOf" : 0.0005
+                },
+                "x2"            : {
+                    "type"       : "number",
+                    "multipleOf" : 0.0005
+                },
+                "y2"            : {
+                    "type"       : "number",
+                    "multipleOf" : 0.0005
+                },
+                "height"        : {
+                    "type"       : "number",
+                    "multipleOf" : 0.125
+                },
+                "width"         : {
+                    "type"       : "number",
+                    "multipleOf" : 0.125
+                },
+                "height2"       : {
+                    "type"       : "number",
+                    "multipleOf" : 0.125
+                },
+                "width2"        : {
+                    "type"       : "number",
+                    "multipleOf" : 0.125
+                },
+                "rotation"      : {
+                    "type"       : [
+                        "object",
+                        "null"
+                    ],
+                    "properties" : {
+                        "x"     : {
+                            "type"       : "number",
+                            "multipleOf" : 0.01
+                        },
+                        "y"     : {
+                            "type"       : "number",
+                            "multipleOf" : 0.01
+                        },
+                        "angle" : {
                             "type"       : "number",
                             "multipleOf" : 0.01
                         }
                     }
                 },
-                "cap"        : {
-                    "type"       : "object",
-                    "properties" : {
-                        "legend"        : {
-                            "type"       : "object",
-                            "properties" : {
-                                "top"    : {
-                                    "type"       : "object",
-                                    "properties" : {
-                                        "string"     : {
-                                            "type" : "string"
-                                        },
-                                        "fontName"   : {
-                                            "type" : "string"
-                                        },
-                                        "fontColor"  : {
-                                            "type" : [
-                                                "string",
-                                                "null"
-                                            ]
-                                        },
-                                        "fontSize"   : {
-                                            "type"       : "number",
-                                            "multipleOf" : 0.01
-                                        },
-                                        "fontUnit"   : {
-                                            "type" : "string",
-                                            "enum" : [
-                                                "px",
-                                                "mm",
-                                                "in",
-                                                "point"
-                                            ]
-                                        },
-                                        "alignement" : {
-                                            "type" : "string",
-                                            "enum" : [
-                                                "left",
-                                                "center",
-                                                "right"
-                                            ]
-                                        }
-                                    }
-                                },
-                                "middle" : {
-                                    "type"       : "object",
-                                    "properties" : {
-                                        "string"     : {
-                                            "type" : "string"
-                                        },
-                                        "fontName"   : {
-                                            "type" : "string"
-                                        },
-                                        "fontColor"  : {
-                                            "type" : [
-                                                "string",
-                                                "null"
-                                            ]
-                                        },
-                                        "fontSize"   : {
-                                            "type"       : "number",
-                                            "multipleOf" : 0.01
-                                        },
-                                        "fontUnit"   : {
-                                            "type" : "string",
-                                            "enum" : [
-                                                "px",
-                                                "mm",
-                                                "in",
-                                                "point"
-                                            ]
-                                        },
-                                        "alignement" : {
-                                            "type" : "string",
-                                            "enum" : [
-                                                "left",
-                                                "center",
-                                                "right"
-                                            ]
-                                        }
-                                    }
-                                },
-                                "bottom" : {
-                                    "type"       : "object",
-                                    "properties" : {
-                                        "string"     : {
-                                            "type" : "string"
-                                        },
-                                        "fontName"   : {
-                                            "type" : "string"
-                                        },
-                                        "fontColor"  : {
-                                            "type" : [
-                                                "string",
-                                                "null"
-                                            ]
-                                        },
-                                        "fontSize"   : {
-                                            "type"       : "number",
-                                            "multipleOf" : 0.01
-                                        },
-                                        "fontUnit"   : {
-                                            "type" : "string",
-                                            "enum" : [
-                                                "px",
-                                                "mm",
-                                                "in",
-                                                "point"
-                                            ]
-                                        },
-                                        "alignement" : {
-                                            "type" : "string",
-                                            "enum" : [
-                                                "left",
-                                                "center",
-                                                "right"
-                                            ]
-                                        }
-                                    }
-                                },
-                                "front"  : {
-                                    "type"       : "object",
-                                    "properties" : {
-                                        "string"     : {
-                                            "type" : "string"
-                                        },
-                                        "fontName"   : {
-                                            "type" : "string"
-                                        },
-                                        "fontColor"  : {
-                                            "type" : [
-                                                "string",
-                                                "null"
-                                            ]
-                                        },
-                                        "fontSize"   : {
-                                            "type"       : "number",
-                                            "multipleOf" : 0.01
-                                        },
-                                        "fontUnit"   : {
-                                            "type" : "string",
-                                            "enum" : [
-                                                "px",
-                                                "mm",
-                                                "in",
-                                                "point"
-                                            ]
-                                        },
-                                        "alignement" : {
-                                            "type" : "string",
-                                            "enum" : [
-                                                "left",
-                                                "center",
-                                                "right"
-                                            ]
-                                        }
-                                    }
-                                }
-                            }
-                        },
-                        "size"          : {
-                            "type"       : "object",
-                            "properties" : {
-                                "height" : {
-                                    "type"       : "number",
-                                    "multipleOf" : 0.125
-                                },
-                                "width"  : {
-                                    "type"       : "number",
-                                    "multipleOf" : 0.125
-                                }
-                            }
-                        },
-                        "color"         : {
-                            "type" : "string"
-                        },
-                        "profile"       : {
-                            "type" : "string",
-                            "enum" : [
-                                "Cherry",
-                                "DCS",
-                                "DOM",
-                                "DSA",
-                                "DSS",
-                                "G20",
-                                "HSA",
-                                "MG",
-                                "MT3",
-                                "OEM",
-                                "SA",
-                                "SS",
-                                "Tai-Hao Cubic",
-                                "TEX",
-                                "XDA"
-                            ]
-                        },
-                        "row"           : {
-                            "description" : "Physical row style",
-                            "type"        : "integer",
-                            "minimum"     : 0,
-                            "maximum"     : 5
-                        },
-                        "material"      : {
-                            "type" : "string"
-                        },
-                        "mount"         : {
-                            "type" : "string",
-                            "enum" : [
-                                "mx",
-                                "alps"
-                            ]
-                        },
-                        "hasNub"        : {
-                            "type" : "boolean"
-                        },
-                        "isTransparent" : {
-                            "type" : "boolean"
-                        }
-                    }
+                "color"         : {
+                    "type" : "string"
                 },
-                "electrical" : {
+                "profile"       : {
+                    "type" : "string",
+                    "enum" : [
+                        "Cherry",
+                        "DCS",
+                        "DOM",
+                        "DSA",
+                        "DSS",
+                        "G20",
+                        "HSA",
+                        "MG",
+                        "MT3",
+                        "OEM",
+                        "SA",
+                        "SS",
+                        "Tai-Hao Cubic",
+                        "TEX",
+                        "XDA"
+                    ]
+                },
+                "rowProfile"    : {
+                    "description" : "Physical row style",
+                    "type"        : "string",
+                    "enum"        : [
+                        "R1",
+                        "R2",
+                        "R3",
+                        "R4",
+                        "R5",
+                        "SPACE"
+                    ]
+                },
+                "material"      : {
+                    "type" : "string"
+                },
+                "mount"         : {
+                    "type" : "string",
+                    "enum" : [
+                        "mx",
+                        "alps"
+                    ]
+                },
+                "hasNub"        : {
+                    "type" : "boolean"
+                },
+                "isStepped": {
+                    "type" : "boolean"
+                },
+                "isTransparent" : {
+                    "type" : "boolean"
+                },
+                "isGhost": {
+                    "type" : "boolean"
+                },
+                "isDecal": {
+                    "type" : "boolean"
+                },
+                "electrical"    : {
                     "type"       : "object",
                     "properties" : {
-                        "switch" : {},
+                        "switch" : {
+                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/master/switch.schema.json"
+                        },
                         "row"    : {
                             "type"    : "integer",
                             "minimum" : 0
