@@ -19,20 +19,20 @@ export interface Key {
             right: Legend
         }
         position: {
-            /** These should be a multiple 0.0005 ? **/
+            // These should be a multiple 0.0005 ?
             x: number
             y: number
             x2: number
             y2: number
             rotation: null | {
-                /** These should be a multiple of 0.01 ? **/
+                // These should be a multiple of 0.01 ?
                 x: number
                 y: number
                 angle: number
             }
         }
         size: {
-            /** These should be a multiple of 0.125 ? **/
+            // These should be a multiple of 0.125 ?
             height: number
             width: number,
             height2: number
