@@ -76,7 +76,6 @@ export interface Key {
             row: number
             column: number
         }
-
-
+        notes: string
     }
 }
