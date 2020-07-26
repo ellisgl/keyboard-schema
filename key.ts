@@ -32,7 +32,7 @@ export interface Key {
             }
         }
         size: {
-            // These should be a multiple of 0.125 ?
+            // These should be a multiple of 0.125? This in U.
             height: number
             width: number,
             height2: number
@@ -77,5 +77,6 @@ export interface Key {
             column: number
         }
         notes: string
+        hasStabilizer: boolean
     }
 }
