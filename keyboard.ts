@@ -1,11 +1,14 @@
 /**
  * Main Keyboard interface (schema)
  */
-import {Key} from "./key";
+import { Board } from "./board";
 
 export interface Keyboard {
     name: string
     description: string
-    keys: Key[]
+    uSize: {
+        value: number
+        units: 'mm' | 'inch'
+    }
+    boards: Board[]
 }
-

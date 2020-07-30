@@ -1,5 +1,5 @@
-import {Legend} from "./legend";
-import {Switch} from "./switch";
+import { Legend } from "./legend";
+import { Switch } from "./switch";
 
 export interface Key {
     legends: {
