@@ -17,6 +17,7 @@
                     "type" : "number"
                 },
                 "units": {
+                    "description" : "Since this creates the uSize, the Unit schema would be invalid here, since the Unit schema would need to look at this object...",
                     "type" : "string",
                     "enum":["in", "mm"]
                 }
