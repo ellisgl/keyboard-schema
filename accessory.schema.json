@@ -31,40 +31,9 @@
                 },
                 "position": {
                     "type": "object",
-                    "properties" : {
-                        "x1": {
-                            "type" : "number",
-                            "multipleOf" : 0.0000001
-                        },
-                        "x2": {
-                            "type" : "number",
-                            "multipleOf" : 0.0000001
-                        },
-                        "y1": {
-                            "type" : "number",
-                            "multipleOf" : 0.0000001
-                        },
-                        "y2": {
-                            "type" : "number",
-                            "multipleOf" : 0.0000001
-                        },
-                        "rotation": {
-                            "type" : ["object", "null"],
-                            "properties" : {
-                                "x": {
-                                    "type" : "number",
-                                    "multipleOf" : 0.0000001
-                                },
-                                "x": {
-                                    "type" : "number",
-                                    "multipleOf" : 0.0000001
-                                },
-                                "angle": {
-                                    "type" : "number",
-                                    "multipleOf": 0.01
-                                }
-                            }
-                        }
+                    "contains": {
+                        "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/position.schema.json#/definitions/Position"
+                    }
                     }
                 }
             }

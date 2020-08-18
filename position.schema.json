@@ -4,7 +4,7 @@
     "title"   : "Position and rotation information.",
     "type"    : "object",
     "properties" : {
-        "position": {
+        "Position": {
             "type": "object",
             "properties" : {
                 "x1": {
@@ -24,7 +24,7 @@
                     "multipleOf" : 0.0000001
                 },
                 "unit": {
-                    "type": "object",
+                    "type": "string",
                     "contains": {
                         "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/unit.schema.json#/definitions/Unit"
                     }
@@ -36,13 +36,20 @@
                             "type" : "number",
                             "multipleOf" : 0.0000001
                         },
-                        "x": {
+                        "y": {
                             "type" : "number",
                             "multipleOf" : 0.0000001
                         },
                         "angle": {
+                            "description" : "This should be in degrees.",
                             "type" : "number",
                             "multipleOf": 0.01
+                        },
+                        "unit": {
+                            "type": "string",
+                            "contains": {
+                                "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/unit.schema.json#/definitions/Unit"
+                            }
                         }
                     }
                 }
