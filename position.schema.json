@@ -1,55 +1,52 @@
 {
-    "$schema" : "http://json-schema.org/draft-07/schema#",
-    "$id"     : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/position.schema.json",
-    "title"   : "Position and rotation information.",
-    "type"    : "object",
+    "$schema"     : "http://json-schema.org/draft-07/schema#",
+    "$id"         : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/position.schema.json",
+    "title"       : "Position and rotation information.",
+    "type"        : "object",
     "definitions" : {
-        "Position": {
-            "type": "object",
+        "Position" : {
+            "type"       : "object",
             "properties" : {
-                "x1": {
-                    "type" : "number",
+                "x1"       : {
+                    "type"       : "number",
                     "multipleOf" : 0.0000001
                 },
-                "x2": {
-                    "type" : "number",
+                "x2"       : {
+                    "type"       : "number",
                     "multipleOf" : 0.0000001
                 },
-                "y1": {
-                    "type" : "number",
+                "y1"       : {
+                    "type"       : "number",
                     "multipleOf" : 0.0000001
                 },
-                "y2": {
-                    "type" : "number",
+                "y2"       : {
+                    "type"       : "number",
                     "multipleOf" : 0.0000001
                 },
-                "unit": {
-                    "type": "string",
-                    "contains": {
-                        "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/unit.schema.json#/definitions/Unit"
-                    }
+                "unit"     : {
+                    "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/unit.schema.json#/definitions/Unit"
                 },
-                "rotation": {
-                    "type" : ["object", "null"],
+                "rotation" : {
+                    "type"       : [
+                        "object",
+                        "null"
+                    ],
                     "properties" : {
-                        "x": {
-                            "type" : "number",
+                        "x"     : {
+                            "type"       : "number",
                             "multipleOf" : 0.0000001
                         },
-                        "y": {
-                            "type" : "number",
+                        "y"     : {
+                            "type"       : "number",
                             "multipleOf" : 0.0000001
                         },
-                        "angle": {
+                        "angle" : {
                             "description" : "This should be in degrees.",
-                            "type" : "number",
-                            "multipleOf": 0.01
+                            "type"        : "number",
+                            "multipleOf"  : 0.01
                         },
-                        "unit": {
-                            "type": "string",
-                            "contains": {
-                                "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/unit.schema.json#/definitions/Unit"
-                            }
+                        "unit"  : {
+                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/unit.schema.json#/definitions/Unit"
                         }
                     }
                 }

@@ -8,7 +8,10 @@
             "type" : "string"
         },
         "description" : {
-            "type" : "string"
+            "type" : ["string", "null"]
+        },
+        "author": {
+            "type" : ["string", "null"]
         },
         "uSize"       : {
             "type"       : "object",
