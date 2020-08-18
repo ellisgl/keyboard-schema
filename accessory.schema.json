@@ -1,0 +1,74 @@
+{
+    "$schema"    : "http://json-schema.org/draft-07/schema#",
+    "$id"        : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/accessory.schema.json",
+    "title"      : "Accessory, such as touch pads and stuff.",
+    "type"       : "object",
+    "properties" : {
+        "Accessory": {
+            "type" : "object",
+            "properties" : {
+                "name"        : {
+                    "type" : "string"
+                },
+                "type" : {
+                    "type": "string",
+                    "enum" : ["mouse nub", "trackpad", "trackball", "joystick", "knob"]
+                },
+                "size": {
+                    "type" : "object",
+                    "properties" : {
+                        "w": {
+                            "type": "number"
+                        },
+                        "l": {
+                            "type": "number"
+                        },
+                        "units": {
+                            "type" : "string",
+                            "enum" : ["in", "mm", "u"]
+                        }
+                    }
+                },
+                "position": {
+                    "type": "object",
+                    "properties" : {
+                        "x1": {
+                            "type" : "number",
+                            "multipleOf" : 0.0000001
+                        },
+                        "x2": {
+                            "type" : "number",
+                            "multipleOf" : 0.0000001
+                        },
+                        "y1": {
+                            "type" : "number",
+                            "multipleOf" : 0.0000001
+                        },
+                        "y2": {
+                            "type" : "number",
+                            "multipleOf" : 0.0000001
+                        },
+                        "rotation": {
+                            "type" : ["object", "null"],
+                            "properties" : {
+                                "x": {
+                                    "type" : "number",
+                                    "multipleOf" : 0.0000001
+                                },
+                                "x": {
+                                    "type" : "number",
+                                    "multipleOf" : 0.0000001
+                                },
+                                "angle": {
+                                    "type" : "number",
+                                    "multipleOf": 0.01
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
