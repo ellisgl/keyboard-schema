@@ -1,0 +1,26 @@
+{
+    "$schema"    : "http://json-schema.org/draft-07/schema#",
+    "$id"        : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/board.schema.json",
+    "title"      : "Individual Board",
+    "type"       : "object",
+    "properties" : {
+        "Board" :  {
+            "type" : "object",
+            "properties" : {
+                "keys"        : {
+                    "type"     : "array",
+                    "contains" : {
+                        "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/key.schema.json#/definitions/Key"
+                    }
+                },
+                "accessories" : {
+                    "type"     : "array",
+                    "contains" : {
+                        "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/accessory.schema.json#/definitions/Accessory"
+                    }
+                }
+            }
+        }
+    }
+}
+
