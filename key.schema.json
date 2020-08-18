@@ -1,6 +1,6 @@
 {
     "$schema"     : "http://json-schema.org/draft-07/schema#",
-    "$id"         : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/master/key.schema.json",
+    "$id"         : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/key.schema.json",
     "title": "Key Schema",
     "description": "Key cap and switch position, rotation and electrical info.",
     "type"        : "object",
@@ -12,40 +12,40 @@
                     "type"       : "object",
                     "properties" : {
                         "topLeft"      : {
-                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/master/legend.schema.json#/definitions/Legend"
+                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/legend.schema.json#/definitions/Legend"
                         },
                         "topCenter"    : {
-                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/master/legend.schema.json#/definitions/Legend"
+                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/legend.schema.json#/definitions/Legend"
                         },
                         "topRight"     : {
-                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/master/legend.schema.json#/definitions/Legend"
+                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/legend.schema.json#/definitions/Legend"
                         },
                         "middleLeft"   : {
-                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/master/legend.schema.json#/definitions/Legend"
+                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/legend.schema.json#/definitions/Legend"
                         },
                         "middleCenter" : {
-                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/master/legend.schema.json#/definitions/Legend"
+                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/legend.schema.json#/definitions/Legend"
                         },
                         "middleRight"  : {
-                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/master/legend.schema.json#/definitions/Legend"
+                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/legend.schema.json#/definitions/Legend"
                         },
                         "bottomLeft"   : {
-                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/master/legend.schema.json#/definitions/Legend"
+                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/legend.schema.json#/definitions/Legend"
                         },
                         "bottomCenter" : {
-                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/master/legend.schema.json#/definitions/Legend"
+                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/legend.schema.json#/definitions/Legend"
                         },
                         "bottomRight"  : {
-                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/master/legend.schema.json#/definitions/Legend"
+                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/legend.schema.json#/definitions/Legend"
                         },
                         "frontLeft"    : {
-                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/master/legend.schema.json#/definitions/Legend"
+                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/legend.schema.json#/definitions/Legend"
                         },
                         "frontCenter"  : {
-                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/master/legend.schema.json#/definitions/Legend"
+                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/legend.schema.json#/definitions/Legend"
                         },
                         "frontRight"   : {
-                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/master/legend.schema.json#/definitions/Legend"
+                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/legend.schema.json#/definitions/Legend"
                         }
                     }
                 },
@@ -165,7 +165,7 @@
                     "type"       : "object",
                     "properties" : {
                         "switch" : {
-                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/master/switch.schema.json#/definitions/Switch"
+                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/switch.schema.json#/definitions/Switch"
                         },
                         "row"    : {
                             "type"    : "integer",

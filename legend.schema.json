@@ -1,6 +1,6 @@
 {
     "$schema"     : "http://json-schema.org/draft-07/schema#",
-    "$id"         : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/master/legend.schema.json",
+    "$id"         : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/legend.schema.json",
     "title": "Key cap legend",
     "type"        : "object",
     "definitions" : {

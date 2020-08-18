@@ -1,6 +1,6 @@
 {
     "$schema"     : "http://json-schema.org/draft-07/schema#",
-    "$id"         : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/master/switch.schema.json",
+    "$id"         : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/switch.schema.json",
     "type"        : "object",
     "title"       : "Switch info",
     "definitions" : {
@@ -57,7 +57,7 @@
                         "object",
                         "null"
                     ],
-                    "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/master/led.schema.json#/definitions/Led"
+                    "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/led.schema.json#/definitions/Led"
                 }
             }
         }
