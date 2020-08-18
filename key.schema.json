@@ -11,59 +11,66 @@
                 "legends"       : {
                     "type"       : "object",
                     "properties" : {
-                        "topLeft"      : {
-                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/legend.schema.json#/definitions/Legend"
+                        "top": {
+                            "type" : "object",
+                            "properties" : {
+                                "left": {
+                                    "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/legend.schema.json#/definitions/Legend"
+                                },
+                                "center": {
+                                    "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/legend.schema.json#/definitions/Legend"
+                                },
+                                "right": {
+                                    "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/legend.schema.json#/definitions/Legend"
+                                }
+                            }
                         },
-                        "topCenter"    : {
-                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/legend.schema.json#/definitions/Legend"
+                        "middle": {
+                            "type" : "object",
+                            "properties" : {
+                                "left": {
+                                    "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/legend.schema.json#/definitions/Legend"
+                                },
+                                "center": {
+                                    "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/legend.schema.json#/definitions/Legend"
+                                },
+                                "right": {
+                                    "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/legend.schema.json#/definitions/Legend"
+                                }
+                            }
                         },
-                        "topRight"     : {
-                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/legend.schema.json#/definitions/Legend"
+                        "bottom": {
+                            "type" : "object",
+                            "properties" : {
+                                "left": {
+                                    "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/legend.schema.json#/definitions/Legend"
+                                },
+                                "center": {
+                                    "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/legend.schema.json#/definitions/Legend"
+                                },
+                                "right": {
+                                    "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/legend.schema.json#/definitions/Legend"
+                                }
+                            }
                         },
-                        "middleLeft"   : {
-                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/legend.schema.json#/definitions/Legend"
-                        },
-                        "middleCenter" : {
-                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/legend.schema.json#/definitions/Legend"
-                        },
-                        "middleRight"  : {
-                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/legend.schema.json#/definitions/Legend"
-                        },
-                        "bottomLeft"   : {
-                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/legend.schema.json#/definitions/Legend"
-                        },
-                        "bottomCenter" : {
-                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/legend.schema.json#/definitions/Legend"
-                        },
-                        "bottomRight"  : {
-                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/legend.schema.json#/definitions/Legend"
-                        },
-                        "frontLeft"    : {
-                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/legend.schema.json#/definitions/Legend"
-                        },
-                        "frontCenter"  : {
-                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/legend.schema.json#/definitions/Legend"
-                        },
-                        "frontRight"   : {
-                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/legend.schema.json#/definitions/Legend"
+                        "front": {
+                            "type" : "object",
+                            "properties" : {
+                                "left": {
+                                    "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/legend.schema.json#/definitions/Legend"
+                                },
+                                "center": {
+                                    "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/legend.schema.json#/definitions/Legend"
+                                },
+                                "right": {
+                                    "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/legend.schema.json#/definitions/Legend"
+                                }
+                            }
                         }
                     }
                 },
-                "x"             : {
-                    "type"       : "number",
-                    "multipleOf" : 0.0005
-                },
-                "y"             : {
-                    "type"       : "number",
-                    "multipleOf" : 0.0005
-                },
-                "x2"            : {
-                    "type"       : "number",
-                    "multipleOf" : 0.0005
-                },
-                "y2"            : {
-                    "type"       : "number",
-                    "multipleOf" : 0.0005
+                "position": {
+                    "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/position.schema.json#/definitions/Position"
                 },
                 "height"        : {
                     "type"       : "number",
@@ -80,26 +87,6 @@
                 "width2"        : {
                     "type"       : "number",
                     "multipleOf" : 0.125
-                },
-                "rotation"      : {
-                    "type"       : [
-                        "object",
-                        "null"
-                    ],
-                    "properties" : {
-                        "x"     : {
-                            "type"       : "number",
-                            "multipleOf" : 0.01
-                        },
-                        "y"     : {
-                            "type"       : "number",
-                            "multipleOf" : 0.01
-                        },
-                        "angle" : {
-                            "type"       : "number",
-                            "multipleOf" : 0.01
-                        }
-                    }
                 },
                 "color"         : {
                     "type" : "string"
@@ -176,6 +163,12 @@
                             "minimum" : 0
                         }
                     }
+                },
+                "hasStabilizer": {
+                    "type" : "boolean"
+                },
+                "notes": {
+                    "type" : ["string", "null"]
                 }
             }
         }

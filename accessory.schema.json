@@ -3,7 +3,7 @@
     "$id"        : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/accessory.schema.json",
     "title"      : "Accessory, such as touch pads and stuff.",
     "type"       : "object",
-    "properties" : {
+    "definitions" : {
         "Accessory": {
             "type" : "object",
             "properties" : {

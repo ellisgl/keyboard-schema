@@ -3,7 +3,7 @@
     "$id"     : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/position.schema.json",
     "title"   : "Unit setting.",
     "description" : "in = inches, mm = millimeters, u is unit size - based from keyboard.schema.json#uSize",
-    "properties" : {
+    "definitions" : {
         "Unit" : {
             "type"    : "string",
             "enum"    : [

@@ -3,7 +3,7 @@
     "$id"        : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/board.schema.json",
     "title"      : "Individual Board",
     "type"       : "object",
-    "properties" : {
+    "definitions" : {
         "Board" :  {
             "type" : "object",
             "properties" : {

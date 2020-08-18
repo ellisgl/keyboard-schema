@@ -7,57 +7,17 @@
         "Switch" : {
             "type"       : "object",
             "properties" : {
-                "manufacturer"    : {
-                    "type" : "string"
-                },
-                "model"           : {
-                    "type" : "string"
-                },
-                "part"            : {
-                    "type" : "string"
-                },
-                "mount"           : {
+                "style": {
                     "type" : "string",
-                    "enum" : [
-                        "Cherry MX",
-                        "Alps"
-                    ]
+                    "enum" : ["alps", "mx"]
                 },
-                "description"     : {
-                    "type" : "string"
+                "pins": {
+                    "type": "integer",
+                    "enum" : [2, 3, 5]
                 },
-                "feel"            : {
-                    "type" : "string",
-                    "enum" : [
-                        "clicky",
-                        "linear",
-                        "tactile"
-                    ]
-                },
-                "force"           : {
-                    "description" : "Force in cN.",
-                    "type"        : "number",
-                    "multipleOf"  : 0.01
-                },
-                "preTravel"       : {
-                    "description" : "Pre travel in mm.",
-                    "type"        : "number",
-                    "multipleOf"  : 0.01
-                },
-                "totalTravel"     : {
-                    "description" : "Total travel in mm.",
-                    "type"        : "number",
-                    "multipleOf"  : 0.01
-                },
-                "hasAudibleClick" : {
+                "hasRGB": {
+                    "description" : "Does this switch have holes for an RBG LED?",
                     "type" : "boolean"
-                },
-                "led"             : {
-                    "type" : [
-                        "object",
-                        "null"
-                    ],
-                    "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/led.schema.json#/definitions/Led"
                 }
             }
         }

@@ -3,7 +3,7 @@
     "$id"     : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/position.schema.json",
     "title"   : "Position and rotation information.",
     "type"    : "object",
-    "properties" : {
+    "definitions" : {
         "Position": {
             "type": "object",
             "properties" : {
