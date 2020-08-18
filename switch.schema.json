@@ -1,0 +1,65 @@
+{
+    "$schema"     : "http://json-schema.org/draft-07/schema#",
+    "$id"         : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/master/switch.schema.json",
+    "type"        : "object",
+    "title"       : "Switch info",
+    "definitions" : {
+        "Switch" : {
+            "type"       : "object",
+            "properties" : {
+                "manufacturer"    : {
+                    "type" : "string"
+                },
+                "model"           : {
+                    "type" : "string"
+                },
+                "part"            : {
+                    "type" : "string"
+                },
+                "mount"           : {
+                    "type" : "string",
+                    "enum" : [
+                        "Cherry MX",
+                        "Alps"
+                    ]
+                },
+                "description"     : {
+                    "type" : "string"
+                },
+                "feel"            : {
+                    "type" : "string",
+                    "enum" : [
+                        "clicky",
+                        "linear",
+                        "tactile"
+                    ]
+                },
+                "force"           : {
+                    "description" : "Force in cN.",
+                    "type"        : "number",
+                    "multipleOf"  : 0.01
+                },
+                "preTravel"       : {
+                    "description" : "Pre travel in mm.",
+                    "type"        : "number",
+                    "multipleOf"  : 0.01
+                },
+                "totalTravel"     : {
+                    "description" : "Total travel in mm.",
+                    "type"        : "number",
+                    "multipleOf"  : 0.01
+                },
+                "hasAudibleClick" : {
+                    "type" : "boolean"
+                },
+                "led"             : {
+                    "type" : [
+                        "object",
+                        "null"
+                    ],
+                    "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/master/led.schema.json#/definitions/Led"
+                }
+            }
+        }
+    }
+}

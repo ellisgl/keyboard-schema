@@ -1,0 +1,46 @@
+{
+    "$schema"     : "http://json-schema.org/draft-07/schema#",
+    "$id"         : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/master/legend.schema.json",
+    "title": "Key cap legend",
+    "type"        : "object",
+    "definitions" : {
+        "Legend" : {
+            "type"       : "object",
+            "properties" : {
+                "string"    : {
+                    "type" : "string"
+                },
+                "fontName"  : {
+                    "type" : "string"
+                },
+                "fontColor" : {
+                    "type" : [
+                        "string",
+                        "null"
+                    ]
+                },
+                "fontSize"  : {
+                    "type"       : "number",
+                    "multipleOf" : 0.01
+                },
+                "fontUnit"  : {
+                    "type" : "string",
+                    "enum" : [
+                        "px",
+                        "mm",
+                        "in",
+                        "point"
+                    ]
+                },
+                "alignment" : {
+                    "type" : "string",
+                    "enum" : [
+                        "left",
+                        "center",
+                        "right"
+                    ]
+                }
+            }
+        }
+    }
+}
