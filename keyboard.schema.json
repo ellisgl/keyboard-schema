@@ -4,10 +4,28 @@
     "title"      : "Keyboard master schema",
     "type"       : "object",
     "properties" : {
-        "keys" : {
-            "type"     : "array",
-            "contains" : {
-                "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/key.schema.json#/definitions/Key"
+        "name"        : {
+            "type" : "string"
+        },
+        "description" : {
+            "type" : "string"
+        },
+        "uSize"       : {
+            "type"       : "object",
+            "properties" : {
+                "value" : {
+                    "type" : "number"
+                },
+                "units": {
+                    "type" : "string",
+                    "enum":["in", "mm"]
+                }
+            }
+        },
+        "boards": {
+            "type" : "array",
+            "contains": {
+                "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/board.schema.json#/definitions/Board"
             }
         }
     }
