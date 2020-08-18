@@ -40,10 +40,7 @@
                     }
                 },
                 "position" : {
-                    "type"     : "object",
-                    "contains" : {
-                        "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/position.schema.json#/definitions/Position"
-                    }
+                    "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/position.schema.json#/definitions/Position"
                 }
             }
         }
