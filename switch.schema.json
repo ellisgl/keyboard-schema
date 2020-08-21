@@ -9,7 +9,7 @@
             "properties" : {
                 "style": {
                     "type" : "string",
-                    "enum" : ["alps", "mx"]
+                    "enum" : ["alps", "mx", "kailh choc low profile"]
                 },
                 "pins": {
                     "type": "integer",
@@ -18,7 +18,7 @@
                 "hasRGB": {
                     "description" : "Does this switch have holes for an RBG LED?",
                     "type" : "boolean"
-                }
+               }
             }
         }
     }

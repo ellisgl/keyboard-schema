@@ -126,13 +126,6 @@
                 "material"      : {
                     "type" : "string"
                 },
-                "mount"         : {
-                    "type" : "string",
-                    "enum" : [
-                        "mx",
-                        "alps"
-                    ]
-                },
                 "hasNub"        : {
                     "type" : "boolean"
                 },
@@ -153,6 +146,16 @@
                     "properties" : {
                         "switch" : {
                             "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/switch.schema.json#/definitions/Switch"
+                        },
+                        "mount"         : {
+                            "type" : "string",
+                            "enum" : [
+                                "wired",
+                                "pcb",
+                                "pcb hot-swap",
+                                "kailh mx hot-swap",
+                                "kailh choc low profile hot-swap"
+                            ]
                         },
                         "row"    : {
                             "type"    : "integer",
