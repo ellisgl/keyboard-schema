@@ -1,6 +1,6 @@
 {
     "$schema"     : "http://json-schema.org/draft-07/schema#",
-    "$id"         : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/position.schema.json",
+    "$id"         : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/main/position.schema.json",
     "title"       : "Position and rotation information.",
     "type"        : "object",
     "definitions" : {
@@ -24,7 +24,7 @@
                     "multipleOf" : 0.0000001
                 },
                 "unit"     : {
-                    "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/unit.schema.json#/definitions/Unit"
+                    "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/main/unit.schema.json#/definitions/Unit"
                 },
                 "rotation" : {
                     "type"       : [
@@ -46,7 +46,7 @@
                             "multipleOf"  : 0.01
                         },
                         "unit"  : {
-                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/unit.schema.json#/definitions/Unit"
+                            "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/main/unit.schema.json#/definitions/Unit"
                         }
                     }
                 }

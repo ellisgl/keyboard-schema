@@ -1,6 +1,6 @@
 {
     "$schema"     : "http://json-schema.org/draft-07/schema#",
-    "$id"         : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/accessory.schema.json",
+    "$id"         : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/main/accessory.schema.json",
     "title"       : "Accessory, such as touch pads and stuff.",
     "type"        : "object",
     "definitions" : {
@@ -40,7 +40,7 @@
                     }
                 },
                 "position" : {
-                    "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/position.schema.json#/definitions/Position"
+                    "$ref" : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/main/position.schema.json#/definitions/Position"
                 }
             }
         }

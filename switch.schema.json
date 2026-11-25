@@ -1,6 +1,6 @@
 {
     "$schema"     : "http://json-schema.org/draft-07/schema#",
-    "$id"         : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/release/switch.schema.json",
+    "$id"         : "https://raw.githubusercontent.com/ellisgl/keyboard-schema/main/switch.schema.json",
     "type"        : "object",
     "title"       : "Switch info",
     "definitions" : {
